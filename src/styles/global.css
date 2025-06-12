@@ -15,14 +15,6 @@ body {
   background-color: #3d405b;
 }
 
-body.lock-scroll {
-  position: fixed;
-  overflow: hidden;
-  width: 100%;
-  top: 0;
-}
-
-
 .site-header {
     display: 'flex';
     justify-content: center;

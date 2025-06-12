@@ -25,13 +25,22 @@
         <button type="submit" class="form-submit-button">Send feedback 	&#128511;</button>
 </form>
 
-<script> document.addEventListener('DOMContentLoaded', () => {
-    if (window.visualViewport) {
-      window.visualViewport.addEventListener('resize', () => {
-        const activeElement = document.activeElement;
-        if (activeElement && ['INPUT', 'TEXTAREA'].includes(activeElement.tagName)) {
-          activeElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const inputs = document.querySelectorAll('input, textarea');
+
+    inputs.forEach(input => {
+      input.addEventListener('focus', () => {
+        document.body.classList.add('lock-scroll');
+        // Optional: center input in viewport
+        setTimeout(() => {
+          input.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 300);
       });
-    }
-  });</script>
+
+      input.addEventListener('blur', () => {
+        document.body.classList.remove('lock-scroll');
+      });
+    });
+  });
+</script>
