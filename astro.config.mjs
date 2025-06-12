@@ -4,6 +4,6 @@ import { defineConfig } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
     site: 'https://ismorod.github.io/form-page/',
-    base: './src/pages',
+    base: '/form-page',
     output: 'static'
 });
