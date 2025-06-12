@@ -24,3 +24,14 @@
         </p>
         <button type="submit" class="form-submit-button">Send feedback 	&#128511;</button>
 </form>
+
+<script> document.addEventListener('DOMContentLoaded', () => {
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener('resize', () => {
+        const activeElement = document.activeElement;
+        if (activeElement && ['INPUT', 'TEXTAREA'].includes(activeElement.tagName)) {
+          activeElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      });
+    }
+  });</script>
