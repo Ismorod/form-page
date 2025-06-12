@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://ismorod.github.io/',
+    site: 'https://ismorod.github.io/form-page/',
     base: '/form-page',
     output: 'static'
 });
