@@ -1,0 +1,113 @@
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  line-height: 1.5;
+  background-color: #3d405b;
+}
+
+
+.site-header {
+    display: 'flex';
+    justify-content: center;
+    text-align: center;
+    background:#f4f1de;
+    width: 100%;
+}
+
+.site-title {
+    color: #e07a5f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    font-kerning: normal;
+}
+
+.main-container {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding: 40px;
+}
+
+.form-container {
+    display: grid ;
+    width: fit-content;
+    height: fit-content;
+    background-color: #f4f1de;
+    border-radius: 20px;
+    overflow: auto;
+}
+
+.form-title {
+    display: grid;
+    text-align: center;
+    color: #ffff;
+    background-color: #e07a5f ;
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 700;
+    padding: 24px;
+
+}
+
+.form {
+    padding: 24px;
+}
+
+input[type=text],input[type=number],textarea {
+    display: grid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 120%;
+    background-color: #ffff;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 48px;
+    padding: 8px;
+    resize: none;
+}
+
+.form-submit-button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight:600;
+    line-height: 120%;
+    background-color:#81b29a ;
+    color: #ffff;
+    border: #81b29a;
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+
+}
+
+textarea{
+    height: 200px;
+}
+
+label {
+    display: flex;
+    color: #e07a5f;
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 8px;
+
+}
+
+@media (max-width:768px) {
+
+    
+
+}
