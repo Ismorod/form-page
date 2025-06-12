@@ -32,10 +32,6 @@
     inputs.forEach(input => {
       input.addEventListener('focus', () => {
         document.body.classList.add('lock-scroll');
-        // Optional: center input in viewport
-        setTimeout(() => {
-          input.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }, 300);
       });
 
       input.addEventListener('blur', () => {
